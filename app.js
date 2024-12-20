@@ -11,6 +11,10 @@ app.get('/new-ep', (req, res, next) => {
     return res.send("Hello with CI/CD!!!")
 });
 
+app.get('/new-ep2', (req, res, next) => {
+    return res.send("Hello with CI/CD!!!")
+});
+
 app.listen(PORT, () => {
     console.log(`Listening to port ${PORT}`)
 })
