@@ -1,9 +1,22 @@
 name: Deploy to GCP
 
 on:
+  # Jalankan workflow saat push ke branch tertentu
   push:
     branches:
       - staging
+      - main
+
+  # Jalankan workflow saat ada pull request dibuat atau diupdate
+  pull_request:
+    branches:
+      - staging
+      - main
+
+  # Jalankan workflow saat pull request di-merge (opsional)
+  pull_request_target:
+    branches:
+      - main
 
 jobs:
   deploy:
