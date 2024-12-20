@@ -16,6 +16,7 @@ on:
   # Jalankan workflow saat pull request di-merge (opsional)
   pull_request_target:
     branches:
+      - staging
       - main
 
 jobs:
